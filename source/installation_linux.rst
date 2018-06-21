@@ -38,4 +38,24 @@ Build GraspIt!
   cd build 
   cmake ..
   make -j5
-  
+
+Test Local GraspIt! Build
+
+.. code::
+
+  export GRASPIT=$PWD
+  ./graspit_simulator
+
+Globally install GraspIt!
+
+.. code::
+
+  sudo make install
+
+Test Global GraspIt! Installation
+
+.. code::
+
+  export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+  graspit_simulator
+
